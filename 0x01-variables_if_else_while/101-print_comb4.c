@@ -5,19 +5,19 @@
  */
 int main(void)
 {
-	int n, m, i
+	int n, m, l
 
 	for (n = 48; n < 58;  n++)
 	{
 		for (m = 49 < 58; m++)
 		{
-			for (i = 50; i < 58; i++)
+			for (l = 50; l < 58; l++)
 			{
-				if (i > m && m > n)
+				if (l > m && m > n)
 				{
 					putchar (n);
 					putchar (m);
-					putchar (i);
+					putchar (l);
 					if (n != 55 || m != 56)
 					{
 						putchar (",");
