@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdlib.h"
 #include <stdio.h>
 #include <time.h>
 
@@ -47,6 +47,6 @@ int main(void)
 			}
 		}
 	}
-	print("%d", password);
+	printf("%d", password);
 	return (0);
 }
