@@ -1,5 +1,33 @@
 0x13. C - More singly linked lists
+C
+Algorithm
+Data structure
+ By: Julien Barbier
+ Weight: 1
+ Ongoing second chance project - started Oct 23, 2023 4:00 AM, must end by Oct 26, 2023 4:00 AM
+ An auto review will be launched at the deadline
+In a nutshell…
+Auto QA review: 0.0/90 mandatory & 0.0/35 optional
+Altogether:  0.0%
+Mandatory: 0.0%
+Optional: 0.0%
+Calculation:  0.0% + (0.0% * 0.0%)  == 0.0%
+Resources
+Read or watch:
 
+Google
+Youtube
+Learning Objectives
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+
+General
+How to use linked lists
+Start to look for the right source of information without too much help
+Copyright - Plagiarism
+You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+You are not allowed to publish any content of this project.
+Any form of plagiarism is strictly forbidden and will result in removal from the program.
 Requirements
 General
 Allowed editors: vi, vim, emacs
@@ -16,3 +44,19 @@ In the following examples, the main.c files are shown as examples. You can use t
 The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called lists.h
 Don’t forget to push your header file
 All your header files should be include guarded
+More Info
+Please use this data structure for this project:
+
+/**
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * 
+ */
+typedef struct listint_s
+{
+    int n;
+    struct listint_s *next;
+} listint_t;

@@ -1,27 +1,20 @@
-#include <stddef.h>  /* Pour inclure size_t*/
-
-/* Structure pour représenter un élément de la liste */
-typedef struct listint_s
-{
-    int n;
-    struct listint_s *next;
-} listint_t;
+#include "lists.h"
 
 /**
- * listint_len - Retourne le nombre d'éléments dans une liste chaînée de type listint_t.
- * @h: Pointeur vers le premier élément de la liste.
+ * listint_len - returns the number of elements in a linked lists
+ * @h: linked list of type listint_t to traverse
  *
- * Return: Le nombre d'éléments dans la liste.
+ * Return: number of nodes
  */
 size_t listint_len(const listint_t *h)
 {
-    size_t num = 0;
+ size_t num = 0;
 
-    while (h)
-    {
-        num++;
-        h = h->next;
-    }
+ while (h)
+ {
+ num++;
+ h = h->next;
+ }
 
-    return (num);
+ return (num);
 }
